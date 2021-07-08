@@ -1,14 +1,15 @@
 import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import MainLayout from '../components/mainLayout';
 import Nav from '../components/nav/nav';
 import SEO from '../components/seo';
 
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 import '../styles/app.css';
 import * as s from './index.module.scss';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Landing = () => {
 
@@ -33,7 +34,7 @@ const Landing = () => {
 
     const master = gsap.timeline();
     
-    master.add(landingTrigger);
+    master.add(landingTrigger());
 
   }, [])
 
@@ -49,7 +50,7 @@ const Landing = () => {
 
               </div>
             </div>
-            <div className={s.graphic}>
+            <div className={s.graphic} ref={graphicRef}>
               <div className={s.graphic__overlay}></div>
             </div>
           </header>
