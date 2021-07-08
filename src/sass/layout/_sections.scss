@@ -1,0 +1,43 @@
+.container, .s-container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--p-2);
+    padding-right: var(--p-2);
+}
+
+.container {
+    max-width: 1300px;
+}
+
+.s-container {
+    max-width: 900px;
+}
+
+.boxhead {
+    margin-bottom: 30px;
+
+    h1, h2, h3, h4, h5, h6 {
+        // font-size: 3.7rem;
+        font-size: 4.7rem;
+        font-weight: 700;
+        color: var(--color-dark);
+    }
+
+    &__icon {
+        @include display-flex();
+        @include box-align(center);
+
+        .icon {
+            margin-left: 1.7rem;
+            width: 4.2rem;
+        }
+    }
+}
+
+.bsP {
+    p {
+        font-size: 2.45rem;
+        line-height: 1.7;
+    }
+}
