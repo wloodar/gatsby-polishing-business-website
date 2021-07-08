@@ -1,0 +1,13 @@
+@import '../../sass/global.scss';
+
+.bar {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+}
+
+.logo {
+    img {
+        height: 2.5rem;
+        width: auto;
+    }
+}
