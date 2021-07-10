@@ -23,7 +23,7 @@ const Landing = () => {
           start: "top" + graphicRef.current.offsetTop,
           end: "100% 0",
           scrub: true,
-        //   markers: true
+          markers: true
         }
       })
 
@@ -42,11 +42,8 @@ const Landing = () => {
               title="Polerowanie Aluminium - Piaskowanie i Szkiełkowanie Warszawa"
           />
           <Nav/>
-          <header className={s.header} ref={graphicRef}>
-            <div className={s.overlay}>
-
-            </div>
-            {/* <div className={s.infoWrapper}>
+          <header className={s.header}>
+            <div className={s.infoWrapper}>
               <div className="container">
                 <div className={s.box}>
                 <h1>Polerowanie Wibracyjne Aluminium</h1>
@@ -56,7 +53,7 @@ const Landing = () => {
             </div>
             <div className={s.graphic} ref={graphicRef}>
               <div className={s.graphic__overlay}></div>
-            </div> */}
+            </div>
           </header>
 
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

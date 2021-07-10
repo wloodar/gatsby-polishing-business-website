@@ -17,19 +17,20 @@
 }
 
 .btn {
-    border-radius: var(--border-radius);
-    padding: 12px 19px;
+    padding: 17px 40px;
     box-sizing: border-box;
-    font-size: 1.35rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
     cursor: pointer;
-    background: var(--surface-background);
+    background: #000;
     color: var(--color-dark);
 }
 
 .btnPrimary {
-    background: var(--color-primary);
-    padding: 12px 45px;
+    background: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    // padding: 12px 45px;
     color: #fff;
     @include transition(.3s opacity ease);
 

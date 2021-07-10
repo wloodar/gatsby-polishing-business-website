@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 import SiteIcon from '../images/assets/polerowanieal-ikonka-biale.png';
 
-const MainLayout = ({ children }: any ) => {
+const MainLayout = ({ children }) => {
     return (
         <>
             <Helmet>
