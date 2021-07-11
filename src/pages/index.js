@@ -81,7 +81,7 @@ const Landing = () => {
                                 <LocationIcon/>
                                 <div>
                                     <span>Lokalizacja:</span>
-                                    <a href="mailto:polerowanieal@gmail.com">Szawelska 35, 03-107 Warszawa</a>
+                                    <a href="https://www.google.com/maps/place/PolerowanieAL/@52.353361,20.9249543,15.07z/data=!4m5!3m4!1s0x471edbe52cbe67b7:0xd97052fca3e6b5fd!8m2!3d52.353318!4d20.9347112?hl=pl-PL">Szawelska 35, 03-107 Warszawa</a>
                                 </div>
                             </li>
                         </ul>

@@ -1,0 +1,126 @@
+@import '../../sass/global.scss';
+
+.wrapper {
+    margin-top: var(--footer-p);
+    background: #121212;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.info {
+    @include display-flex();
+    @include flex-justify-content(space-between);
+}
+
+.address {
+    h2 {
+        font-size: 1.55rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    p {
+        padding-top: 10px;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.8;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.contact {
+    ul {
+        li {
+            @include display-flex();
+            margin-bottom: 1rem;
+
+            svg, svg g {
+                fill: #fff;
+            }
+
+            svg {
+                width: 1.6rem;
+                height: auto;
+                margin-right: 1rem;
+            }
+
+            a {
+                font-size: 1.4rem;
+                color: #ccc;
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    img {
+        width: auto;
+        height: 2.4rem;
+    }
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: #333;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.bottom {
+    @include display-flex();
+    @include box-align(center);
+    @include flex-justify-content(space-between);
+}
+
+.socials {
+    svg {
+        margin-right: 1.2rem;
+        width: 1.7rem;
+        height: auto;
+        fill: #fff;
+
+        &:hover {
+            fill: var(--color-primary);
+        }
+    }
+}
+
+.nav {
+    ul {
+        li {
+            display: inline-block;
+            margin-left: 3rem;
+
+            &:first-child {
+                margin-left: 0;
+            }            
+
+            a {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #bbb;
+                text-decoration: underline;
+                @include transition(.4s color ease);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    margin-top: 30px;
+    color: #555;
+    font-size: 1.2rem;
+}
