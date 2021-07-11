@@ -1,101 +1,40 @@
-@import '../../sass/global.scss';
+// @import '../../sass/global.scss';
 
-.bar {
-    position: fixed;
-    top: 0; right: 0; left: 0;
-    padding-bottom: 1.6rem;
-    background: #fff;
-    z-index: 10;
-}
+// .bar {
+//     position: absolute;
+//     top: 0; right: 0; left: 0;
+//     padding-bottom: 2rem;
+//     padding-top: 2rem;
+//     // background: #fff;
+//     z-index: 10;
 
-.top {
-    border-bottom: 1px solid var(--border-primary);
-    padding-top: .8rem;
-    padding-bottom: .8rem;
-    margin-bottom: 1.6rem;
-    
-    > :global(.container) {
-        @include display-flex();    
-        @include box-align(center);
-        @include flex-justify-content(space-between);
-    }
-}
+//     :global(.container) {
+//         @include display-flex();
+//         @include box-align(center);
+//         @include flex-justify-content(space-between);
+//     }
+// }
 
-.contact {
-    ul {
-        @include display-flex();    
-        @include box-align(center);
+// .logo {
+//     img {
+//         height: 2.5rem;
+//         width: auto;
+//     }
+// }
 
-        li {
-            @include display-flex();    
-            @include box-align(center);
+// .list {
+//     ul {
+//         li {
+//             display: inline-block;
 
-            &:not(:first-child) {
-                margin-left: 3.1rem;
-            }
+//             &:not(:first-child) {
+//                 margin-left: 2.7rem;
+//             }
 
-            &:first-child {
-                svg {
-                    width: 12px;
-                }
-            }
-
-            svg {
-                width: 13px;
-                height: auto;
-                margin-right: .8rem;
-                fill: #616161;
-
-                g {
-                    fill: #616161;
-                }
-            }
-
-            span {  
-                font-size: 1.25rem;
-                color: #777;
-            }
-
-            &:last-child {
-                span {
-                    margin-top: -3px;
-                }
-            }
-        }
-    }
-}
-
-.socials {
-    margin-bottom: -3px;
-
-    ul {
-        li {
-            display: inline-block;
-
-            svg {
-                height: auto;
-            }
-            
-            &:first-child {
-                svg {
-                    width: 1.3rem;
-                }
-            }
-
-            &:last-child {
-                margin-left: 1.7rem;
-
-                svg {
-                    width: 1.2rem;
-                }
-            }
-        }
-    }
-}
-
-.logo {
-    img {
-        height: 2.5rem;
-        width: auto;
-    }
-}
+//             a {
+//                 font-weight: 500;
+//                 color: #fff;
+//             }
+//         }
+//     }
+// }

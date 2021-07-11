@@ -17,26 +17,29 @@
 }
 
 .btn {
-    padding: 17px 40px;
+    padding: 1.6rem 3.1rem;
     box-sizing: border-box;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     cursor: pointer;
     background: #000;
     color: var(--color-dark);
+    text-transform: uppercase;
 }
 
 .btnPrimary {
-    background: #000;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    // padding: 12px 45px;
+    background: var(--color-primary);
     color: #fff;
     @include transition(.3s opacity ease);
 
     &:hover {
         opacity: .84;
     }
+}
+
+.btnWhite {
+    background: #fff;
+    color: #000;
 }
 
 .btn-primary-bright {

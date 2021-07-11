@@ -1,12 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'gatsby';
 
 import MainLayout from '../components/mainLayout';
 import Nav from '../components/nav/nav';
 import SEO from '../components/seo';
 
 import '../styles/app.css';
+import MailIcon from '../images/assets/mail';
+import PhoneIcon from '../images/assets/phone';
+import LocationIcon from '../images/assets/location';
 import * as s from './index.module.scss';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,7 +31,7 @@ const Landing = () => {
         }
       })
 
-      tl.to(graphicRef.current, { backgroundPositionY: 30 });
+      tl.to(graphicRef.current, { backgroundPositionY: 20 });
 
       return tl;
     }
@@ -41,10 +45,48 @@ const Landing = () => {
           <SEO 
               title="Polerowanie Aluminium - Piaskowanie i Szkiełkowanie Warszawa"
           />
-          <Nav/>
           <header className={s.header} ref={graphicRef}>
             <div className={s.overlay}>
-
+                <div className="container">
+                    <div className={s.heading}>
+                        <h1>Polerowanie Wibracyjne Aluminium. Piaskowanie i Szkiełkowanie
+                            <span>
+                                PolerowanieAL - Zajmujemy się polerowaniem aluminium, stopów aluminium, stali kwasowej i nierdzewnej i wiele więcej...
+                            </span>
+                        </h1>
+                        <div className={s.actions}>
+                            <Link to="kontakt" className="btn btnPrimary">Skontaktuj się</Link>
+                            <Link to="kontakt" className="btn btnWhite">Nasza oferta</Link>
+                        </div>
+                    </div>
+                </div>
+                <div className={s.bottomBar}>
+                    <div className="container">
+                        <ul>
+                            <li>
+                                <PhoneIcon/>
+                                <div>
+                                    <span>Numer telefonu:</span>
+                                    <a href="tel:512 542 024">+48 512 542 024</a>
+                                </div>
+                            </li>
+                            <li>
+                                <MailIcon/>
+                                <div>
+                                    <span>Adres Email:</span>
+                                    <a href="mailto:polerowanieal@gmail.com">polerowanieal@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <LocationIcon/>
+                                <div>
+                                    <span>Lokalizacja:</span>
+                                    <a href="mailto:polerowanieal@gmail.com">Szawelska 35, 03-107 Warszawa</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             {/* <div className={s.infoWrapper}>
               <div className="container">

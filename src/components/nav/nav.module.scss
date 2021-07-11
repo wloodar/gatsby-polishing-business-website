@@ -1,12 +1,138 @@
 @import '../../sass/global.scss';
 
 .bar {
-    position: absolute;
+    position: fixed;
     top: 0; right: 0; left: 0;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    // background: #fff;
+    padding-bottom: 1.6rem;
+    padding-top: 1.5rem;
+    background: #fff;
+    border-bottom: 1px solid #f3f3f3;
     z-index: 10;
+
+    :global(.container) {
+        @include display-flex();
+        @include box-align(center);
+        @include flex-justify-content(space-between);
+    }
+}
+
+.list {
+    ul {
+        li {
+            display: inline-block;
+
+            &:not(:first-child) {
+                margin-left: 3.4rem;
+            }
+
+            a {
+                // color: var(--color-secondary);
+                font-weight: 500;
+                @include transition(.5s color ease);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    &__contact {
+        a {
+            display: inline-block;
+            padding: 1.55rem 2.4rem;
+            background: var(--color-primary);
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 600 !important;
+            color: #fff !important;
+        }
+    }
+}
+
+.top {
+    border-bottom: 1px solid var(--border-primary);
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    margin-bottom: 1.6rem;
+    
+    > :global(.container) {
+        @include display-flex();    
+        @include box-align(center);
+        @include flex-justify-content(space-between);
+    }
+}
+
+.contact {
+    ul {
+        @include display-flex();    
+        @include box-align(center);
+
+        li {
+            @include display-flex();    
+            @include box-align(center);
+
+            &:not(:first-child) {
+                margin-left: 3.1rem;
+            }
+
+            &:first-child {
+                svg {
+                    width: 12px;
+                }
+            }
+
+            svg {
+                width: 13px;
+                height: auto;
+                margin-right: .8rem;
+                fill: #616161;
+
+                g {
+                    fill: #616161;
+                }
+            }
+
+            span {  
+                font-size: 1.25rem;
+                color: #777;
+            }
+
+            &:last-child {
+                span {
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+}
+
+.socials {
+    margin-bottom: -3px;
+
+    ul {
+        li {
+            display: inline-block;
+
+            svg {
+                height: auto;
+            }
+            
+            &:first-child {
+                svg {
+                    width: 1.3rem;
+                }
+            }
+
+            &:last-child {
+                margin-left: 1.7rem;
+
+                svg {
+                    width: 1.2rem;
+                }
+            }
+        }
+    }
 }
 
 .logo {

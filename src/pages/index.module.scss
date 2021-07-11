@@ -1,7 +1,7 @@
 @import '../sass/global.scss';
 
 .header {
-    height: 100vh;
+    // height: 70vh;
     @include display-flex();    
     @include box-align(center);
     overflow: hidden;
@@ -9,12 +9,97 @@
     background: url('../images/test.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .overlay {
     width: 100%; height: 100%;
-    background: rgba($color: #000000, $alpha: .5);
+    // background: url('../images/shadow3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: rgba($color: #000000, $alpha: .7);
+}
+
+.heading {
+    // padding-top: 25vh;
+    // padding-bottom: 24vh;
+    padding-top: 22vh;
+    padding-bottom: 12vh;
+    max-width: 55rem;
+
+    h1 {
+        color: #fff;
+        font-size: 4.5rem;
+
+        span {
+            width: 70%;
+            display: block;
+            font-size: 1.55rem;
+            line-height: 1.7;
+            font-weight: 500;
+            padding-top: 1.7rem;
+        }
+    }
+
+    .actions {
+        margin-top: 3.1rem;
+
+        :global(.btnPrimary) {
+            margin-right: 1.2rem;
+        }
+    }
+    
+    a {
+        display: inline-block;
+    }
+}
+
+.bottomBar {
+    border-top: 1px solid #444;
+    background: url('../images/shadow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    :global(.container) {
+        padding-top: 3.1rem;
+        padding-bottom: 3.1rem;
+    }
+
+    ul {
+        @include display-flex();
+        @include box-align(center);
+        @include flex-justify-content(space-between);
+
+        li {
+            @include display-flex();
+            @include box-align(center);
+
+            svg, svg g {
+                width: 3rem;
+                height: auto;
+                fill: var(--color-primary);
+            }
+            
+            div {
+                margin-left: 1.5rem;
+            }
+
+            span {
+                display: block;
+                font-size: 1.3rem;
+                color: var(--color-secondary);
+                padding-bottom: 5px;
+            }
+
+            a {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+    }
 }
 
 .infoWrapper {
