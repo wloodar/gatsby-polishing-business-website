@@ -30,16 +30,29 @@
 .btnPrimary {
     background: var(--color-primary);
     color: #fff;
-    @include transition(.3s opacity ease);
+    @include transition(.3s all ease);
 
     &:hover {
-        opacity: .84;
+        background: var(--color-primary-darker);
     }
 }
 
 .btnWhite {
     background: #fff;
     color: #000;
+
+    &:hover {
+        background: #f4f4f4;
+    }
+}
+
+.btnDark {
+    background: #222;
+    color: #fff;
+
+    &:hover {
+        background: #000;
+    }
 }
 
 .btn-primary-bright {

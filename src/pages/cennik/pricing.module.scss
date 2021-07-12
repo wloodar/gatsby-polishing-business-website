@@ -1,2 +1,31 @@
 @import '../../sass/global.scss';
 
+.wrapper {
+    padding-top: 40px;
+}
+
+.subtitle {
+    background: #f8f8f8;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    max-width: 93rem;
+
+    p {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: var(--color-primary);
+    }
+}
+
+.desc {
+    max-width: 75rem;
+    margin-bottom: 40px;
+}
+
+.priceList {
+    max-width: 93rem;
+
+    table {
+        width: 100%;
+    }
+}

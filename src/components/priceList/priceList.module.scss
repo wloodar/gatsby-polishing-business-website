@@ -1,0 +1,61 @@
+.tab {
+    border-collapse: collapse;
+    // margin: auto;
+
+    thead {
+        tr {
+            background: #333;
+        }
+
+        th {
+            border: 1px solid #555;
+
+            &:first-of-type {
+                padding-left: 35px;
+            }
+
+            &:nth-child(2) {
+                text-align: center;
+            }
+
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+
+    td, th {
+        text-align: left;
+        padding: 23px 15px;
+    }
+
+    tbody {
+
+        tr {
+            background: #fafafa;
+
+            &:nth-child(even) {
+                background: #fff;
+            }
+        }
+
+        td {
+            border: 1px solid #f2f2f2;
+
+            &:first-child {
+                padding-left: 35px;
+            }
+        }
+    }
+
+    .name {
+        font-size: 1.55rem;
+        font-weight: 400;
+    }
+
+    .price {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}

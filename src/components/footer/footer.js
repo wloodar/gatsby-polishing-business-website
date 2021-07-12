@@ -61,7 +61,7 @@ const Footer = () => {
                     <div className={s.nav}>
                         <ul>
                             <li>
-                                <Link to="/na-temat/">Na temat</Link>
+                                <Link to="/">Strona Główna</Link>
                             </li>
                             <li>
                                 <Link to="/cennik/">Cennik</Link>

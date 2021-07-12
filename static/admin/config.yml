@@ -5,7 +5,7 @@ backend:
 local_backend: true
 
 media_folder: static/img
-public_folder: /img
+public_folder: /src/images/uploads
 
 collections:
   - name: 'cennik'
@@ -26,3 +26,43 @@ collections:
           options: ["sztuka", "zestaw"],
           default: ["sztuka"]
         }
+  - name: 'oferta'
+    label: 'Oferta'
+    folder: 'content/oferta'
+    create: true
+    slug: 'index'
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    sort: ''
+    fields:
+      - { label: 'Tytuł oferty', name: 'title', widget: 'string' }
+      - { label: 'Podtytuł oferty / krótki wstęp', name: 'subtitle', widget: 'text' }
+      - { 
+          label: 'Data dodania', 
+          name: 'publish_date', 
+          widget: 'datetime',
+          default: '',
+          date_format: "DD.MM.YYYY",
+          time_format: "HH:mm" 
+        }
+      - { 
+          label: 'Zdjęcie główne', 
+          name: 'hero_pic', 
+          widget: 'image',
+          choose_url: true,
+        }
+      - { label: 'Opis oferty', name: 'body', widget: 'markdown' }
+  # - name: 'galeria'
+  #   label: 'Galeria'
+  #   folder: 'content/galeria'
+  #   create: true
+  #   fields:
+  #       - { 
+  #           label: 'Zdjęcia w galerii',
+  #           name: 'images',
+  #           widget: 'modular',
+  #           types: 
+  #             - { label: 'image', name: 'image', widget: 'image', choose_url: true }
+  #        }
+    

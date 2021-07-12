@@ -16,7 +16,7 @@ const Nav = () => {
                 <div className={s.list}>
                     <ul>
                         <li>
-                            <Link to="/na-temat/">Na temat</Link>
+                            <Link to="/">Strona Główna</Link>
                         </li>
                         <li>
                             <Link to="/cennik/">Cennik</Link>
@@ -28,7 +28,7 @@ const Nav = () => {
                             <Link to="/galeria/">Galeria</Link>
                         </li>
                         <li className={s.list__contact}> 
-                            <Link to="/kontakt/">Kontakt</Link>
+                            <Link to="/kontakt/" className="btn btnPrimary">Kontakt</Link>
                         </li>
                     </ul>
                 </div>

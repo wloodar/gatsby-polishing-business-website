@@ -1,9 +1,9 @@
 @import '../../sass/global.scss';
 
 .wrapper {
-    margin-top: 40px;
+    margin-top: 17vh;
     @include display-flex();
-    
+    margin-bottom: 12vh;
 }
 
 .info {
@@ -53,6 +53,15 @@
     width: 500px;
 
     iframe {
+        width: 100%;
+    }
+}
+
+.pic {
+    display: none;
+    margin-top: 17vh;
+
+    img {
         width: 100%;
     }
 }

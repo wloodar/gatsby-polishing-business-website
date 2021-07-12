@@ -53,8 +53,8 @@ const Landing = () => {
                             </span>
                         </h1>
                         <div className={s.actions}>
-                            <Link to="kontakt" className="btn btnPrimary">Skontaktuj się</Link>
-                            <Link to="kontakt" className="btn btnWhite">Nasza oferta</Link>
+                            <Link to="/kontakt" className="btn btnPrimary">Skontaktuj się</Link>
+                            <Link to="/oferta" className="btn btnWhite">Nasza oferta</Link>
                         </div>
                     </div>
                 </div>

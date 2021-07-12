@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import cs from 'classnames';
 
 import * as s from './contact.module.scss';
@@ -7,7 +9,10 @@ import MainLayout from '../../components/mainLayout';
 import Instagram from '../../images/assets/instagram';
 import Facebook from '../../images/assets/facebook';
 
-const Contact = () => {
+const Contact = ({ data }) => {
+    
+    const { file: bottomPic } = data;
+
     return (
         <MainLayout>
             <div className="container navMargin">
@@ -36,12 +41,27 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className={s.map}>
-                        <div style={{ width: "100%" }}><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(szawelska)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+                        <div style={{ width: "100%" }}><iframe width="100%" height="500" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(szawelska)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
                     </div>
                 </div>
             </div>  
+            <div className="container">
+                <div className={s.pic}>
+                    <GatsbyImage image={getImage(bottomPic)} alt="Efekty polerowania w PolerowaneiAL"/>
+                </div>
+            </div>
         </MainLayout>
     )
 }
 
 export default Contact;
+
+export const query = graphql`
+    query effectPic {
+        file(relativePath: {eq: "effects/efekt-polerowania-w-polerowanieal.jpg"}) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED)
+            }
+        }
+    }
+`
