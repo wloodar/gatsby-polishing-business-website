@@ -62,7 +62,7 @@ const Footer = () => {
                     <div className={s.nav}>
                         <ul>
                             <li>
-                                <Link to="/onas/">Na temat</Link>
+                                <Link to="/na-temat/">Na temat</Link>
                             </li>
                             <li>
                                 <Link to="/cennik/">Cennik</Link>
