@@ -25,15 +25,12 @@ collections:
     label: 'Cennik'
     folder: 'content/cennik'
     create: true
-    slug: 'index'
-    media_folder: ''
-    path: '{{title}}/index'
     editor:
       preview: false
     fields:
-      - { label: 'Nazwa usługi', name: 'name', widget: 'text' }
-      - { label: 'Dolny próg cenowy', name: 'min_price', widget: 'text' }
-      - { label: 'Górny próg cenowy', name: 'max_price', widget: 'text' }
+      - { label: 'Nazwa usługi', name: 'name', widget: 'string' }
+      - { label: 'Dolny próg cenowy', name: 'min_price', widget: 'string' }
+      - { label: 'Górny próg cenowy', name: 'max_price', widget: 'string' }
       - { 
           label: 'Sztuka / Zestaw', 
           name: 'quantity_type', 
