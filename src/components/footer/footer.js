@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import cs from 'classnames';
 
 import * as s from './footer.module.scss';
 
@@ -16,14 +15,14 @@ const Footer = () => {
         <footer className={s.wrapper}>
             <div className="container">
                 <div className={s.info}>
-                    <div className={cs(s.info__box, s.address)}>
+                    <div className={s.address}>
                         <h2>PolerowanieAL Warszawa</h2>
                         <p>
                             Szawelska 35, 
                             <span>03-107 Warszawa</span>
                         </p>
                     </div>
-                    <div className={cs(s.info__box, s.contact)}>
+                    <div className={s.contact}>
                         <ul>
                             <li>
                                 <PhoneIcon/>
@@ -56,8 +55,8 @@ const Footer = () => {
             <div className="container">
                 <div className={s.bottom}>
                     <div className={s.socials}>
-                        <a href="https://www.instagram.com/polerowanieal/" title="Instagram Polerowanieal.pl" target="_blank"><Instagram/></a>
-                        <a href="https://www.facebook.com/Polerowanie-wibracyjne-Wo%C5%82omin-110733307010253/" target="_blank"><Facebook/></a>
+                        <a href="https://www.instagram.com/polerowanieal/" title="Instagram Polerowanieal.pl" target="_blank" rel="noreferrer"><Instagram/></a>
+                        <a href="https://www.facebook.com/Polerowanie-wibracyjne-Wo%C5%82omin-110733307010253/" target="_blank" rel="noreferrer"><Facebook/></a>
                     </div>
                     <div className={s.nav}>
                         <ul>
@@ -73,7 +72,7 @@ const Footer = () => {
                             <li>
                                 <Link to="/galeria/">Galeria</Link>
                             </li>
-                            <li className={s.list__contact}> 
+                            <li> 
                                 <Link to="/kontakt/">Kontakt</Link>
                             </li>
                         </ul>

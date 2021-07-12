@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'gatsby';
 
 import MainLayout from '../components/mainLayout';
-import Nav from '../components/nav/nav';
 import SEO from '../components/seo';
 
 import '../styles/app.css';
@@ -27,7 +26,6 @@ const Landing = () => {
           start: "top" + graphicRef.current.offsetTop,
           end: "100% 0",
           scrub: true,
-        //   markers: true
         }
       })
 

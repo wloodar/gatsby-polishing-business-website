@@ -31,8 +31,8 @@ const Contact = () => {
                         </div>
                         <div className={cs(s.info__row, s.info__socials)}>
                             <span>Nasze profile: </span>
-                            <a href="https://www.instagram.com/polerowanieal/" title="Instagram Polerowanieal.pl" target="_blank"><Instagram/></a>
-                            <a href="https://www.facebook.com/Polerowanie-wibracyjne-Wo%C5%82omin-110733307010253/" target="_blank"><Facebook/></a>
+                            <a href="https://www.instagram.com/polerowanieal/" title="Instagram Polerowanieal.pl" target="_blank" rel="noreferrer"><Instagram/></a>
+                            <a href="https://www.facebook.com/Polerowanie-wibracyjne-Wo%C5%82omin-110733307010253/" target="_blank" rel="noreferrer"><Facebook/></a>
                         </div>
                     </div>
                     <div className={s.map}>
