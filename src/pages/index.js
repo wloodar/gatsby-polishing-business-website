@@ -86,17 +86,6 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className={s.infoWrapper}>
-              <div className="container">
-                <div className={s.box}>
-                <h1>Polerowanie Wibracyjne Aluminium</h1>
-                <a href="/kontakt" class="btn btnPrimary">Skontaktuj się</a>
-                </div>
-              </div>
-            </div>
-            <div className={s.graphic} ref={graphicRef}>
-              <div className={s.graphic__overlay}></div>
-            </div> */}
           </header>
 
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

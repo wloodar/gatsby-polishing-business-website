@@ -5,7 +5,7 @@ subtitle: Pasja nasza narodziła się już w 1987 roku kiedy to mając 13 lat
   do dziś zawsze miałem motocykl. Siedząc w piwnicy po nocach rozkręcałem ją i
   skręcałem sam nie wiem teraz po co, ale pasja ta trwa do po dzień dziesiejszy.
 publish_date: 2021-07-12T20:44:04.922Z
-hero_pic: renowacja-zabytkowych-motocykli.jpg
+hero_pic: renowacja-zabytkowych-motocykli-1-.jpg
 ---
 <!--StartFragment-->
 

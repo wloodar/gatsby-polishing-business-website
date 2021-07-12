@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import * as s from './offerPost.module.scss';
 
 import MainLayout from '../../components/mainLayout';
@@ -15,9 +16,14 @@ const OfferPost = ({ data }) => {
         markdownRemark: { html: offerHtml }
     } = data;
 
+    console.log(offerData.hero_pic);
+
     return (
         <MainLayout>
-            <header className={s.header} style={{ background: 'url(' + offerData.hero_pic.publicURL + ')', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <header className={s.header}>
+                <div className={s.header__image}>
+                    <GatsbyImage image={getImage(offerData.hero_pic)}/>
+                </div>
                 <div className={s.header__overlay}>
                     <div className="container">
                         <div className={s.header__box}>
@@ -55,7 +61,11 @@ export const query = graphql`
                 title
                 subtitle
                 hero_pic {
-                    publicURL
+                    sourceInstanceName
+                    childImageSharp {
+                        id
+                        gatsbyImageData(placeholder: BLURRED)
+                    }
                 }
             }
         }
