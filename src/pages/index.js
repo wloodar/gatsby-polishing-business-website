@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'gatsby';
 
 import MainLayout from '../components/mainLayout';
+import OffersCarousel from '../components/offersCarousel/offersCarousel';
+import BottomBar from '../components/bottomBar/bottomBar';
 import SEO from '../components/seo';
 
 import '../styles/app.css';
@@ -89,7 +91,10 @@ const Landing = () => {
           </header>
 
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            
+            <OffersCarousel/>
 
+            <BottomBar/>
       </MainLayout>
   )
 }

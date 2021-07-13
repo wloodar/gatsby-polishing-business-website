@@ -42,7 +42,9 @@ const Offer = ({ data }) => {
                             <Link to={val.slug} className="btn btnPrimary">Dowiedz się więcej {">"}</Link>
                         </div>
                         <div className={s.pic}>
-                            <GatsbyImage image={getImage(val.hero_pic)} alt={val.title}/>
+                            <Link to={val.slug}>
+                                <GatsbyImage image={getImage(val.hero_pic)} alt={val.title}/>
+                            </Link>
                         </div>
                     </div>
                 ))}

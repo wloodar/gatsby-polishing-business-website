@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import * as s from './priceList.module.scss';
 
-const PriceList = ({ data }) => {
+const PriceList = () => {
     
     const {
         allMarkdownRemark: { edges: prices }

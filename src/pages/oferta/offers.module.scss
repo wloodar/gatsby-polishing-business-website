@@ -9,10 +9,6 @@
     }
 }
 
-// .info {
-//     padding: 10rem 2rem 4rem;
-// }
-
 .item {
     margin-top: 3.4rem;
     background: #f7f7f7;
@@ -43,11 +39,22 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; /* number of lines to show */
-    line-height: 2;        /* fallback */
+    -webkit-line-clamp: 2; 
+    line-height: 2;      
     max-height: 2;   
 }
 
 .pic {
     width: 50rem;
+    overflow: hidden;
+
+    img {
+        transition: .3s all ease !important;
+    }
+
+    &:hover {
+        img {
+            @include transform(scale(1.05));
+        }
+    }
 }
