@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import SEO from '../../components/seo';
 import * as s from './offers.module.scss';
 
 import MainLayout from '../../components/mainLayout';
@@ -11,8 +12,6 @@ const Offer = ({ data }) => {
     const {
         allMarkdownRemark: { edges: offers }
     } = data;
-
-    console.log(offers);
 
     const OffersList = () => {
         
@@ -30,6 +29,9 @@ const Offer = ({ data }) => {
 
         return (
             <div className={s.list}>
+                <SEO
+                    title="Nasza Oferta Polerowania Aluminium | PolerowanieAL"
+                />
                 {offersArr.map((val) => (
                     <div className={s.item}>
                         <div className={s.info}>

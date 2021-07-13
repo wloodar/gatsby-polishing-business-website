@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import SEO from '../../components/seo';
 import * as s from './gallery.module.scss';
 
 import MainLayout from '../../components/mainLayout';
@@ -16,6 +17,9 @@ const Gallery = ({ data }) => {
     
     return (
         <MainLayout>
+            <SEO
+                title="Efekty Polerowania - Piaskowania & Szkiełkowania | PolerowanieAL"
+            />
             {/* <div className="navMargin"> */}
                 <div className={s.gallery}>
                     {images.map(({ id, node }) => (

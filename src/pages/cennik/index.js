@@ -1,5 +1,6 @@
 import React from 'react';
 import cs from 'classnames';
+import SEO from '../../components/seo';
 import * as s from './pricing.module.scss';
 
 import MainLayout from '../../components/mainLayout';
@@ -9,6 +10,9 @@ const Pricing = () => {
 
     return (
         <MainLayout>
+            <SEO
+                title="Cennik Polerowania Aluminium | PolerowanieAL"
+            />
             <div className="navMargin">
                 <div className={cs("container", s.wrapper)}>
                     <div className="boxhead">

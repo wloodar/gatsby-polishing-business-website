@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import SEO from '../../components/seo';
 import cs from 'classnames';
 
 import * as s from './contact.module.scss';
@@ -15,6 +16,9 @@ const Contact = ({ data }) => {
 
     return (
         <MainLayout>
+            <SEO
+                title="Skontaktuj się z nami | PolerowanieAL"
+            />
             <div className="container navMargin">
                 <div className={s.wrapper}>
                     <div className={s.info}>

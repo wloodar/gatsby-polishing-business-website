@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import SEO from '../../components/seo';
 import * as s from './offerPost.module.scss';
 
 import MainLayout from '../../components/mainLayout';
@@ -20,6 +21,9 @@ const OfferPost = ({ data }) => {
 
     return (
         <MainLayout>
+            <SEO
+                title={offerData.title + " | PolerowanieAL"}
+            />
             <header className={s.header}>
                 <div className={s.header__image}>
                     <GatsbyImage image={getImage(offerData.hero_pic)}/>
