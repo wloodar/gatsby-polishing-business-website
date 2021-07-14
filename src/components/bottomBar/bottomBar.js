@@ -8,7 +8,7 @@ const BottomBar = ({ offerPage }) => {
         <div className={s.bar}>
             <div className="container">
                 <div className="boxhead">
-                    <h3>Zainteresowany? Masz pytanie?</h3>
+                    <h3>Zainteresowany / a? Masz pytanie?</h3>
                 </div>
                 <div className={s.actions}>
                     <Link to="/kontakt" className="btn btnPrimary">Skontaktuj się</Link>

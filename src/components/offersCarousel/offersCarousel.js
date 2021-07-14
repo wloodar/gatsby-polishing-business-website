@@ -38,10 +38,18 @@ const OffersCarousel = () => {
     const imagesRef = useRef(null);
 
     useEffect(() => {
-        setImagesHeight(imagesRef.current.clientWidth);
+        const setProperImagesHeight = () => {
+            if (window.innerWidth < 768 && window.innerWidth > 480) {
+                setImagesHeight('auto');
+            } else {
+                setImagesHeight(imagesRef.current.clientWidth);
+            } 
+        }
+
+        setProperImagesHeight();
 
         const resizeListener = () => {
-            setImagesHeight(imagesRef.current.clientWidth);
+            setProperImagesHeight();
         };
 
         window.addEventListener('resize', resizeListener);

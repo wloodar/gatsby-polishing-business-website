@@ -10,6 +10,10 @@
 .info {
     @include display-flex();
     @include flex-justify-content(space-between);
+
+    @include respond(phone) {
+        display: block;
+    }
 }
 
 .address {
@@ -33,6 +37,12 @@
 }
 
 .contact {
+
+    @include respond(phone) {
+        margin-top: 5.7rem;
+        margin-bottom: 5.7rem;
+    }
+
     ul {
         li {
             @include display-flex();
@@ -44,7 +54,7 @@
 
             svg {
                 width: 1.6rem;
-                height: auto;
+                height: 1.6rem;
                 margin-right: 1rem;
             }
 
@@ -79,13 +89,17 @@
     @include display-flex();
     @include box-align(center);
     @include flex-justify-content(space-between);
+
+    @include respond(phone) {
+        display: block;
+    }
 }
 
 .socials {
     svg {
         margin-right: 1.2rem;
         width: 1.7rem;
-        height: auto;
+        height: 1.7rem;
         fill: #fff;
 
         &:hover {
@@ -95,6 +109,11 @@
 }
 
 .nav {
+
+    @include respond(phone) {
+        display: none;
+    }
+
     ul {
         li {
             display: inline-block;

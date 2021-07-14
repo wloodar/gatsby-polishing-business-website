@@ -86,6 +86,9 @@ $breakpoint argument choices:
     @else if $breakpoint == phablet {
         @media (min-width: 37.5em)  { @content ; }
     }
+    @else if $breakpoint == mobile {
+        @media (max-width: 48em) { @content };
+    }
     @else if $breakpoint == tab-port {
         @media screen and (max-width: 56.25em) { @content }; // 900px
     }

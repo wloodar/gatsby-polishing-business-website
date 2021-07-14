@@ -38,7 +38,7 @@ const OfferPost = ({ data }) => {
                                 </span>
                             </h1>
                             <div className={s.header__actions}>
-                                <Link to="/kontakt" className="btn btnPrimary">Jestem zainteresowany</Link>
+                                <Link to="/kontakt" className="btn btnPrimary">Jestem zainteresowany / a</Link>
                                 <Link to="/oferta" className="btn btnWhite">{"< Wróć do ofert"}</Link>
                             </div>
                         </div>

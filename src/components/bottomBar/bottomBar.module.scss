@@ -10,7 +10,18 @@
     @include display-flex();
     @include flex-justify-content(space-between);
 
+    @include respond(phone) {
+        display: block;
+    }
+
     a {
         display: inline-block;
+
+        @include respond(phone) {
+            display: block;
+            width: 25rem;
+            margin-bottom: 2.1rem;
+            text-align: center;
+        }
     }
 }

@@ -1,6 +1,13 @@
+@import '../../sass/global.scss';
+
 .tab {
     border-collapse: collapse;
     // margin: auto;
+
+    @include respond(mobile) {
+        margin-left: calc(var(--p-2) * -1);
+        width: calc(var(--p-2) * 2 + 100%) !important;
+    }
 
     thead {
         tr {
@@ -12,6 +19,10 @@
 
             &:first-of-type {
                 padding-left: 35px;
+
+                @include respond(mobile) {
+                    padding-left: var(--p-2);
+                }
             }
 
             &:nth-child(2) {
@@ -21,12 +32,20 @@
             text-transform: uppercase;
             font-weight: 500;
             color: #fff;
+
+            @include respond(mobile) {
+                font-size: 1.3rem;
+            }
         }
     }
 
     td, th {
         text-align: left;
         padding: 23px 15px;
+
+        @include respond(mobile) {
+            padding: 14px 10px;
+        }
     }
 
     tbody {
@@ -44,6 +63,12 @@
 
             &:first-child {
                 padding-left: 35px;
+            
+                @include respond(mobile) {
+                    padding-left: var(--p-2);
+
+                    font-size: 1.35rem;
+                }
             }
         }
     }
@@ -53,9 +78,20 @@
         font-weight: 400;
     }
 
+    .quantity {
+        @include respond(mobile) {
+            width: 10px;
+            font-size: 1.2rem;
+        }
+    }
+
     .price {
         text-align: center;
         font-size: 1.4rem;
         font-weight: 600;
+
+        @include respond(mobile) {
+            font-size: 1.3rem;
+        }
     }
 }

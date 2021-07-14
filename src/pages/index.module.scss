@@ -28,9 +28,18 @@
     padding-bottom: 12vh;
     max-width: 55rem;
 
+    @include respond(phone) {
+        padding-top: 13rem;
+        padding-bottom: 4rem;
+    }
+
     h1 {
         color: #fff;
         font-size: 4.5rem;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
 
         span {
             width: 70%;
@@ -52,6 +61,13 @@
     
     a {
         display: inline-block;
+
+        @include respond(phone) {
+            display: block;
+            width: 22rem;
+            text-align: center;
+            margin-bottom: 1.4rem;
+        }
     }
 }
 
@@ -72,9 +88,19 @@
         @include box-align(center);
         @include flex-justify-content(space-between);
 
+        @include respond(mobile) {
+            display: block;
+        }  
+
         li {
             @include display-flex();
-            @include box-align(center);
+            @include box-align(center);  
+
+            @include respond(mobile) {
+                &:not(:first-of-type) {
+                    margin-top: 2.1rem;
+                }
+            }
 
             svg, svg g {
                 width: 3rem;

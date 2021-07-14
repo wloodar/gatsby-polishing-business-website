@@ -3,6 +3,10 @@
 .grid {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
+
+    @include respond(mobile) {
+        display: block;
+    }
 }
 
 .item {
@@ -31,6 +35,16 @@
         img {
             @include transform(scale(1.05));
         }
+    }
+
+    .image {
+        // @include respond(mobile) {
+        //     height: auto !important;
+        // }
+
+        // @include respond(phone) {
+        //     height: initial !important;
+        // }
     }
 }
 
