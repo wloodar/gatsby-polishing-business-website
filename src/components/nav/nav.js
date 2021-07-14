@@ -12,6 +12,7 @@ const Nav = () => {
     const handleClick = () => setClick(!click);
 
     return (
+        <>
         <nav className={s.bar}>
             <div className="container">
                 <div className={s.logo}>
@@ -38,11 +39,13 @@ const Nav = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={s.mobileIcon} onClick={handleClick}>
-                    <span>Menu</span>
-                </div>
+                <button className={s.mobileIcon} onClick={handleClick}>
+                    <span>{click ? "Zamknij" : "Menu"}</span>
+                </button>
             </div>
         </nav>
+        <div className={cs(s.overlay, click ? s.overlay__active : null)} onMouseDown={handleClick}></div>
+        </>
     )
 }
 

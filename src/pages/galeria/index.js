@@ -12,8 +12,6 @@ const Gallery = ({ data }) => {
     const {
         allFile: { edges: images }
     } = data;
-
-    console.log(images);
     
     return (
         <MainLayout>

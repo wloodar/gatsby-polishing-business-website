@@ -62,13 +62,16 @@
 
 .subtitle {
     margin-top: 1.2rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; 
-    line-height: 2;      
-    max-height: 2;   
+
+    :global(.bsP) {    
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+        line-height: 2;      
+        max-height: 2;   
+    }
 }
 
 .pic {
