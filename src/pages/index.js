@@ -135,7 +135,9 @@ const Landing = ({ data }) => {
         </div>
 
         <div className="row">
-            <OffersCarousel/>
+            <div className={s.offersCarousel}>
+                <OffersCarousel/>
+            </div>
         </div>
 
         <div className={cs(s.bottom, 'center')}>
