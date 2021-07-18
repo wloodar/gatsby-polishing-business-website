@@ -5,6 +5,7 @@ import * as s from './pricing.module.scss';
 
 import MainLayout from '../../components/mainLayout';
 import PriceList from '../../components/priceList/priceList';
+import BottomBar from '../../components/bottomBar/bottomBar';
 
 const Pricing = () => {
 
@@ -28,6 +29,9 @@ const Pricing = () => {
                         <PriceList/>    
                     </div>
                 </div>
+            </div>
+            <div className="row">
+                <BottomBar/>
             </div>
         </MainLayout>
     )
