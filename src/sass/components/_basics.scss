@@ -60,13 +60,25 @@
     color: var(--color-primary);
 }
 
-.btn-border {
-    border: 1px solid var(--surface-background);
-    color: var(--color-dark);
-    background: #fff;
+.btnBorder {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    @include transition(.3s all ease);
 
     &:hover {
-        background: #fbfbfb;
-        color: var(--color-primary);
+        background: var(--color-primary);
+        color: #fff;
     }
 }
+
+// .btn-border {
+//     border: 1px solid var(--surface-background);
+//     color: var(--color-dark);
+//     background: #fff;
+
+//     &:hover {
+//         background: #fbfbfb;
+//         color: var(--color-primary);
+//     }
+// }

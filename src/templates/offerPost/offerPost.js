@@ -49,6 +49,9 @@ const OfferPost = ({ data }) => {
                 <div className={s.content}>
                     <div dangerouslySetInnerHTML={{ __html: offerHtml }} />
                 </div>
+                <div className={s.pricing}>
+                    <Link to="/cennik">Nasz cennik</Link>
+                </div>
             </div>
             <BottomBar offerPage={true}/>
         </MainLayout>

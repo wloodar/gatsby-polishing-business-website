@@ -5,6 +5,7 @@ import SEO from '../../components/seo';
 import * as s from './gallery.module.scss';
 
 import MainLayout from '../../components/mainLayout';
+import OffersCarousel from '../../components/offersCarousel/offersCarousel';
 import BottomBar from '../../components/bottomBar/bottomBar';
 
 const Gallery = ({ data }) => {
@@ -18,17 +19,21 @@ const Gallery = ({ data }) => {
             <SEO
                 title="Efekty Polerowania - Piaskowania & Szkiełkowania | PolerowanieAL"
             />
-            {/* <div className="navMargin"> */}
-                <div className={s.gallery}>
-                    {images.map(({ id, node }) => (
-                        <GatsbyImage image={getImage(node)}/>
-                    ))}
-                    {images.map(({ id, node }) => (
-                        <GatsbyImage image={getImage(node)}/>
-                    ))}
-                </div>
-            {/* </div> */}
-                <BottomBar/>
+
+            <div className={s.gallery}>
+                {images.map(({ id, node }) => (
+                    <GatsbyImage image={getImage(node)}/>
+                ))}
+                {images.map(({ id, node }) => (
+                    <GatsbyImage image={getImage(node)}/>
+                ))}
+            </div>
+
+            <div className="row">
+                <OffersCarousel/>
+            </div>
+
+            <BottomBar/>
         </MainLayout>
     )
 }

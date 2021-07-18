@@ -22,8 +22,6 @@
 }
 
 .heading {
-    // padding-top: 25vh;
-    // padding-bottom: 24vh;
     padding-top: 22vh;
     padding-bottom: 12vh;
     max-width: 55rem;
@@ -166,5 +164,114 @@
         width: 100%;
         // height: 100%;
         background: rgba($color: #000000, $alpha: .3);
+    }
+}
+
+.intro {
+    p {
+        max-width: 70rem;
+        margin: auto;
+    }
+}
+
+.qualityLabel {
+    background: url('../images/polerowanieal-dewiza-jakosc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    &__overlay {
+        width: 100%; height: 100%;
+        padding-top: 12rem; padding-bottom: 12rem;
+        background: rgba($color: #000000, $alpha: .8);
+
+        @include respond(mobile) {
+            padding-top: 9rem; padding-bottom: 10rem;
+        }
+    }
+
+    :global(.boxhead) {
+        h2 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 600;
+            color: #fff;
+        
+            @include respond(mobile) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.trust {
+    padding-bottom: 10rem;
+    border-bottom: 1px solid #eee;
+
+    @include respond(tab-port) {
+        padding-bottom: 5.7rem;
+    }
+    
+    :global(.container) {
+        @include display-flex();
+        @include box-align(center);
+
+        @include respond(tab-land) {
+            @include box-align(center);
+        }
+
+        @include respond(tab-port) {
+            display: block;
+            margin-top: -5rem;
+        }
+    }
+
+    &__pic {
+        width: 60rem;
+
+        @include respond(tab-land) {
+            width: 47rem;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        width: calc(100% - 65rem);
+        margin-left: 5rem;
+
+        @include respond(tab-land) {
+            width: calc(100% - 50rem);
+            margin-left: 3rem;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-left: 0;
+            margin-top: var(--p-2);
+        }
+
+        :global(.boxhead) {
+            h2 {
+                font-size: 2.8rem;
+
+                @include respond(phone) {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.bottom {
+    a {
+        margin: auto;
     }
 }

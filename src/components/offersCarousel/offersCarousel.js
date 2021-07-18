@@ -112,7 +112,7 @@ const OffersCarousel = () => {
     return (
         <div className="container">
             <div className="boxhead">
-                <h3>Czym się zajmujemy</h3>
+                <h3>Nasza oferta</h3>
             </div>
             <OffersList/>
             {offersArrLength > 3 ? <ShowMoreOffers/> : null }
