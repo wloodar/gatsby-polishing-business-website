@@ -17,7 +17,7 @@ const Nav = () => {
             <div className="container">
                 <div className={s.logo}>
                     <Link to="/">
-                        <img src={Logo} alt="Logo PolerowanieAL"/>
+                        <img src={Logo} alt="Logo PolerowanieAL" loading="eager"/>
                     </Link> 
                 </div>  
                 <div className={cs(s.list, click ? s.list__active : null)}>
