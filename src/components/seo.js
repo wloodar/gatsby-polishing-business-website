@@ -14,7 +14,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
             title
             description
             author
-            siteURL
+            siteUrl
           }
         }
       }
@@ -55,7 +55,7 @@ const SEO = ({ description, lang, meta, title, image }) => {
         },
         {
           property: `og:image`,
-          content: siteMetadata.siteURL + ogImage
+          content: siteMetadata.siteUrl + ogImage
         },
         {
           name: `twitter:card`,

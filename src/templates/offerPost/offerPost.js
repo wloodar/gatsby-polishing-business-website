@@ -17,14 +17,12 @@ const OfferPost = ({ data }) => {
         markdownRemark: { html: offerHtml }
     } = data;
 
-    console.log(offerData.hero_pic);
-
     return (
         <MainLayout>
             <SEO
                 title={offerData.title + " | PolerowanieAL"}
                 description={offerData.subtitle + " | PolerowanieAL"}
-                image={offerData.hero_pic.childImageSharp.fixed.src}
+                image={offerData.hero_pic ? offerData.hero_pic.childImageSharp.fixed.src : undefined}
             />
             <header className={s.header}>
                 <div className={s.header__image}>
