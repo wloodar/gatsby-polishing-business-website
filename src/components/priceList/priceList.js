@@ -45,7 +45,7 @@ const PriceList = () => {
                 </thead>
                 <tbody>                    
                     { arr.map((val, key) => (
-                        <tr key={key} className={s.item}>
+                        <tr key={key}>
                             <td className={s.name}>
                                 {val.name}
                             </td>
@@ -63,9 +63,7 @@ const PriceList = () => {
     }
 
     return (
-        <div className={s.list}>
-            <PricingTable/>
-        </div>
+        <PricingTable/>
     )
 }
 

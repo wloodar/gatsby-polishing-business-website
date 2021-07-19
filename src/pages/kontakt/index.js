@@ -1,5 +1,4 @@
 import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import SEO from '../../components/seo';
 import cs from 'classnames';
 
@@ -15,6 +14,7 @@ const Contact = () => {
         <MainLayout>
             <SEO
                 title="Skontaktuj się z nami | PolerowanieAL"
+                description='Już teraz umów się lub dowiedz więcej - skontaktuj się z nami | PolerowanieAL - Polerowanie wibracyjne i roto-wibracyjne części do motocykli zabytkowych jak i współczesnych, felg aluminiowych do samochodów osobowych oraz ciężarowych do 24".'
             />
             <div className="container navMargin">
                 <div className={s.wrapper}>

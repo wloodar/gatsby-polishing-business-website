@@ -13,6 +13,7 @@ const Pricing = () => {
         <MainLayout>
             <SEO
                 title="Cennik Polerowania Aluminium | PolerowanieAL"
+                description='Sprawdź cennik wykonywanych przez nas usług | PolerowanieAL - Polerowanie wibracyjne i roto-wibracyjne części do motocykli zabytkowych jak i współczesnych, felg aluminiowych do samochodów osobowych oraz ciężarowych do 24".'
             />
             <div className="navMargin">
                 <div className={cs("container", s.wrapper)}>

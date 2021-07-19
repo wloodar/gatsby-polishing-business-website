@@ -2,7 +2,6 @@
 
 .tab {
     border-collapse: collapse;
-    // margin: auto;
 
     @include respond(mobile) {
         margin-left: calc(var(--p-2) * -1);

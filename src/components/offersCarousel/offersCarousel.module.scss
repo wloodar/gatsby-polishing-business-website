@@ -28,23 +28,13 @@
             bottom: 3rem;
         }
 
-        a {
+        button {
             opacity: 1;
         }
 
         img {
             @include transform(scale(1.05));
         }
-    }
-
-    .image {
-        // @include respond(mobile) {
-        //     height: auto !important;
-        // }
-
-        // @include respond(phone) {
-        //     height: initial !important;
-        // }
     }
 }
 
@@ -85,7 +75,7 @@
         }
     }    
 
-    a {
+    button {
         opacity: 0;
         margin-top: 1.7rem;
         display: inline-block;

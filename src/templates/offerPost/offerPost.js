@@ -23,10 +23,12 @@ const OfferPost = ({ data }) => {
         <MainLayout>
             <SEO
                 title={offerData.title + " | PolerowanieAL"}
+                description={offerData.subtitle + " | PolerowanieAL"}
+                image={offerData.hero_pic.childImageSharp.fixed.src}
             />
             <header className={s.header}>
                 <div className={s.header__image}>
-                    <GatsbyImage image={getImage(offerData.hero_pic)}/>
+                    <GatsbyImage image={getImage(offerData.hero_pic)} alt={offerData.title}/>
                 </div>
                 <div className={s.header__overlay}>
                     <div className="container">
@@ -72,6 +74,9 @@ export const query = graphql`
                     childImageSharp {
                         id
                         gatsbyImageData(placeholder: BLURRED)
+                        fixed {
+                            src
+                        }
                     }
                 }
             }

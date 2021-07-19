@@ -59,8 +59,8 @@ const OffersCarousel = () => {
         }
     }, [])
 
-    const OffersList = () => {
-        
+    const prepareOffersArr = () => {
+
         let offersArr = [];
 
         offers.forEach(el => {
@@ -79,20 +79,27 @@ const OffersCarousel = () => {
 
         offersArr = offersArr.slice(0, 3);
 
+        return offersArr;
+    }
+
+    const OffersList = () => {
+        
+        let offersArr = prepareOffersArr();
+
         return (
             <div className={s.grid}>
                 {offersArr.map((val, key) => (
                     <div className={s.item} key={key}>
                         <Link to={val.slug}>
-                            <div className={s.image} ref={imagesRef} style={{ height: imagesHeight + "px" }}>
-                                <GatsbyImage image={getImage(val.hero_pic)} style={{ height: '100%', maxHeight: '100%' }} imgStyle={{ objectFit: 'cover' }}/>
+                            <div ref={imagesRef} style={{ height: imagesHeight + "px" }}>
+                                <GatsbyImage image={getImage(val.hero_pic)} alt={val.title} style={{ height: '100%', maxHeight: '100%' }} imgStyle={{ objectFit: 'cover' }}/>
                                 <div className={s.overlay}>
                                     <div className={s.box}>
                                         <h2>{val.title}</h2>
                                         <div className={s.subtitle}>
                                             <p>{val.subtitle}</p>
                                         </div>
-                                        <Link to={val.slug} className="btn btnPrimary">Dowiedz się więcej {">"}</Link>
+                                        <button className="btn btnPrimary">Dowiedz się więcej {">"}</button>
                                     </div>
                                 </div>
                             </div>

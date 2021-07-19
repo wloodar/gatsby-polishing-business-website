@@ -18,14 +18,15 @@ const Gallery = ({ data }) => {
         <MainLayout>
             <SEO
                 title="Efekty Polerowania - Piaskowania & Szkiełkowania | PolerowanieAL"
+                description='Zobacz efekty naszych działań - Galeria | PolerowanieAL - Polerowanie wibracyjne i roto-wibracyjne części do motocykli zabytkowych jak i współczesnych, felg aluminiowych do samochodów osobowych oraz ciężarowych do 24".'
             />
 
             <div className={s.gallery}>
-                {images.map(({ id, node }) => (
-                    <GatsbyImage image={getImage(node)}/>
+                {images.map(({ node }, key) => (
+                    <GatsbyImage image={getImage(node.childImageSharp)} alt={node.name} key={key}/>
                 ))}
-                {images.map(({ id, node }) => (
-                    <GatsbyImage image={getImage(node)}/>
+                {images.map(({ node }, key) => (
+                    <GatsbyImage image={getImage(node.childImageSharp)} alt={node.name} key={key}/>
                 ))}
             </div>
 
@@ -48,6 +49,7 @@ export const query = graphql`
                     childImageSharp {
                         gatsbyImageData(placeholder: BLURRED)
                     }
+                    name
                 }
             }
         }

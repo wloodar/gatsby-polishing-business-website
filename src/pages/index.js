@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import cs from 'classnames';
 
 import MainLayout from '../components/mainLayout';
@@ -43,13 +43,9 @@ const Landing = ({ data }) => {
 
   }, [])
 
-  console.log(motorsPic);
-
   return (
       <MainLayout>
-        <SEO 
-            title="Polerowanie Aluminium - Piaskowanie i Szkiełkowanie Warszawa"
-        />
+        <SEO/>
         <header className={s.header} ref={graphicRef}>
         <div className={s.overlay}>
             <div className="container">
@@ -121,15 +117,15 @@ const Landing = ({ data }) => {
         <div className={s.trust}>
             <div className="container">
                 <div className={s.trust__pic}>
-                    <GatsbyImage image={motorsPic.childImageSharp.gatsbyImageData}/>
+                    <GatsbyImage image={motorsPic.childImageSharp.gatsbyImageData} alt="Zabytkowy motocykl"/>
                 </div>
                 <div className={s.trust__desc}>
                     <div className="boxhead">
                         <h2>Od ponad 20 lat wykonujemy renowację zabytkowych motocykli</h2>
                     </div>
-                    <dib className="bsP">
+                    <div className="bsP">
                         <p>Pomagamy naszym klientom w pracach remontowych oraz doradzamy w zakresie prac z tym związanych. Od ponad 3 lat dodatkowo wykonujemy usługi polerowania na profesjonalnych maszynach wibracyjnych, które polerują aluminium kształtkami żywicznymi. Świadczymy usługi polerowania elementów motocyklowych jak obręcze kół, piasty, pokrywy piast, felgi motocyklowe, kartery silników, dekle silników, głowice, cylindry, oraz całe kompletne silniki.</p>
-                    </dib>
+                    </div>
                 </div>
             </div>
         </div>

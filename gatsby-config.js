@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "polerowanieal",
+    siteURL: "https://polerowanieal.pl",
+    author: '@wloodar',
+    title: "Polerowanie Aluminium | Piaskowanie & Szkiełkowanie Warszawa",
+    description: `Polerujemy wibracyjnie i roto-wibracyjnie części do motocykli zabytkowych jak i współczesnych, felgi aluminiowe do samochodów osobowych oraz ciężarowych do 24".`
   },
   plugins: [
     "gatsby-plugin-sass",

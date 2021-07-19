@@ -28,12 +28,13 @@ const Offer = ({ data }) => {
         });
 
         return (
-            <div className={s.list}>
+            <div>
                 <SEO
                     title="Nasza Oferta Polerowania Aluminium | PolerowanieAL"
+                    description='Sprawdź naszą ofertę | PolerowanieAL - Polerowanie wibracyjne i roto-wibracyjne części do motocykli zabytkowych jak i współczesnych, felg aluminiowych do samochodów osobowych oraz ciężarowych do 24".'
                 />
-                {offersArr.map((val) => (
-                    <div className={s.item}>
+                {offersArr.map((val, key) => (
+                    <div className={s.item} key={key}>
                         <div className={s.info}>
                             <h2>{val.title}</h2>
                             <div className={s.subtitle}>
