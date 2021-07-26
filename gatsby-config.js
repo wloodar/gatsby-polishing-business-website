@@ -50,6 +50,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NR2F4VZ",
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `#DC7241`,
