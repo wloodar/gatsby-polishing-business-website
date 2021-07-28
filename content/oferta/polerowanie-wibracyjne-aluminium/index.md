@@ -13,12 +13,6 @@ Przemysł samochodowy i motocyklowy dba o to, by w każdym aucie i motocyklu zna
 
 Trwałość i żywotność elementów aluminiowych w samochodach i motocyklach można zwiększyć poprzez ich regularną pielęgnację. Obróbka wibrościerna elementów aluminiowych może zająć nawet kilkanaście godzin. Polega ona na stosowaniu odpowiednich urządzeń wibracyjnych z jednoczesnym użyciem kształtek ściernych i środków chemicznych, które cały ten proces wspomagają. W efekcie uzyskujemy gładką, jednolitą, dobrze wypolerowaną powierzchnię. Co najważniejsze – na powierzchni felg pozostaje powłoka antykorozyjna, która przedłuża jej żywotność oraz zmniejsza podatność na niekorzystne działanie czynników środowiskowych.
 
-
-
-![Test](polerowanie-felg-aluminium-polerowanieal.jpg)
-
-
-
 Najbardziej pożądany efekt polerowania felg to lustrzany połysk. Można go uzyskać na całkiem nowych, jak i na używanych, kilkuletnich częściach motocyklowych oraz felgach samochodowych. Polerowanie wibracyjne to przede wszystkim oszczędność czasu, dobra trwałość efektu końcowego dzięki zastosowaniu odpowiednich środków chemicznych, jak również stosunkowo niskie koszty obróbki.
 
 <!--EndFragment-->

@@ -25,9 +25,6 @@ const Gallery = ({ data }) => {
                 {images.map(({ node }, key) => (
                     <GatsbyImage image={getImage(node.childImageSharp)} alt={node.name} key={key}/>
                 ))}
-                {images.map(({ node }, key) => (
-                    <GatsbyImage image={getImage(node.childImageSharp)} alt={node.name} key={key}/>
-                ))}
             </div>
 
             <div className="row">
