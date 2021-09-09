@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import * as s from './footer.module.scss';
 
@@ -10,7 +11,10 @@ import Instagram from '../../images/assets/instagram';
 import Facebook from '../../images/assets/facebook';
 import Logo from '../../images/polerowanieal-transparent-white.png';
 
+import WlodevLogo from '../../images/assets/wlodev-white-transparent.png';
+
 const Footer = () => {
+
     return (
         <footer className={s.wrapper}>
             <div className="container">
@@ -81,6 +85,13 @@ const Footer = () => {
                 <div className={s.copyright}>
                     © 2021 PolerowanieAL
                 </div>
+
+                <div className={s.attribution}>
+                    <a href="https://wlodev.com/">
+                        <span>Developed by</span>
+                        <img src={WlodevLogo} alt="Wlodev fullstack developer" />
+                    </a>
+                </div>  
             </div>
         </footer>
     )

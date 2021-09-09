@@ -143,3 +143,27 @@
     color: #555;
     font-size: 1.2rem;
 }
+
+.attribution {
+    margin-top: 2.4rem;
+
+    a {
+        display: block;
+
+        &:hover {
+            span {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    span {
+        font-size: 1rem;
+        color: var(--color-secondary);
+    }
+
+    img {
+        margin-top: .7rem;
+        width: 7.4rem;
+    }
+}
